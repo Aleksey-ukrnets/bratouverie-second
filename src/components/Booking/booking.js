@@ -24,5 +24,5 @@ const Booking = () => {
     </section>
   )
 }
-
+// test
 export default Booking;
