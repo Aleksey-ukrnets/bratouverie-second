@@ -16,7 +16,12 @@ function ReviewSwipper() {
   return (
     <div className="review__slider">
       <>
-        <Swiper style={{ '--swiper-pagination-color': 'rgb(206, 71, 154)' }} slidesPerView={1} spaceBetween={10} pagination={{
+        <Swiper style={{ '--swiper-pagination-color': 'rgb(206, 71, 155)',
+                        '--swiper-pagination-bullet-height' : '12px',
+                        '--swiper-pagination-bullet-width' : '12px',
+                        '--swiper-pagination-top' : '290px'
+                      }} 
+        slidesPerView={1} spaceBetween={10} pagination={{
           "clickable": true
         }} breakpoints={{
           "540": {
@@ -31,7 +36,7 @@ function ReviewSwipper() {
             "slidesPerView": 5,
             "spaceBetween": 50
           }
-        }} className="my__swiper">
+        }} className="my_swiper">
           <SwiperSlide className="swipe"><img src={female} /></SwiperSlide>
           <SwiperSlide className="swipe"><img src={male} /></SwiperSlide>
           <SwiperSlide src={female} className="swipe"><img src={female} /></SwiperSlide>

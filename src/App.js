@@ -5,6 +5,7 @@ import Review from "./components/Review/review";
 import Social from "./components/Social/social";
 import Unique from "./components/Unique/unique";
 import Work from "./components/Work/work";
+import Assortment from "./components/assortment/assortment";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Check />
       <Booking />
       <Review />
+      <Assortment />
       <Social />
     </>
   );
