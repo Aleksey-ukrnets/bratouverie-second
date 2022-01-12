@@ -52,7 +52,7 @@ const Work = () => {
         </div>
         <div className="work__descrip">
           <p className="work__text">
-            Убедиться в подленности вещи можно только на https://checkbrand.com</p>
+            Убедиться в подленности вещи можно только на <a className='work__text-link' href='https://checkbrand.com/'>https://checkbrand.com</a></p>
         </div>
       </div>
     </section>
