@@ -1,6 +1,7 @@
+import BookingButton from '../Button-booking/booking-button';
 import './style.scss'
 
-const Booking = () => {
+const Booking = ({ setModal }) => {
 
   return (
     <section className="booking">
@@ -17,8 +18,10 @@ const Booking = () => {
             <p>Выкуп/Продажа бронирований 16.01 - 21.01</p>
           </div>
           <div className="booking__right-text">Уникальный номер: 113 000 Р</div>
-          <div className="booking__right-num">913</div>
-          <button className="booking__right-btn" data-toggle="modal" data-target="#payment">Забронировать</button>
+          <div className="booking__btns">
+            <div className="booking__right-num">913</div>
+            <BookingButton setModal={setModal} name={'booking-btn'} />
+          </div>
         </div>
       </div>
     </section>

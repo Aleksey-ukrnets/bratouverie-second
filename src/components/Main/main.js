@@ -5,16 +5,14 @@ import logo from '../../assets/images/logo.png'
 import tShirt from '../../assets/images/t-shirt.png'
 
 import './main.scss'
+import MenuBurger from '../MenuBurger/menu-burger'
+import BookingButton from '../Button-booking/booking-button'
 
-const Main = () => {
+const Main = ({ isOpenModal, setModal }) => {
   return (
     <main className="main">
       <div className="main__header">
-        {/* <div className="burger">
-          <div className="burger__span"></div>
-          <div className="burger__span"></div>
-          <div className="burger__span"></div>
-        </div> */}
+        <MenuBurger />
         <img className="main__logo" src={MainLogo} alt="main logo" />
         <div className="main__cart">
           <img className="main__cart-img" src={shoppingCart} alt="shopping-cart" />
@@ -38,7 +36,7 @@ const Main = () => {
           <div className="main__video-link">Смотреть видео</div>
         </a>
         <p className="main__sum">100 000 ₽</p>
-        <button className="main__btn" data-toggle="modal" data-target="#payment">Забронировать</button>
+        <BookingButton name={'main-btn'} setModal={setModal} />
       </div>
     </main>
   )
